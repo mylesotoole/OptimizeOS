@@ -26,7 +26,7 @@ echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 ```
 
 
-## 2. [Installing Ruby](https://www.railstutorial.org/book)
+## [2. Installing Ruby](https://www.railstutorial.org/book)
 
 Use RVM:
 ``` 
@@ -44,4 +44,32 @@ rvm --default use 3.1.2
 Check Version:
 ```
 ruby -v
+```
+
+## Installing Rails
+
+Configure the __.gemrc__ file to skip the installation of Ruby documentation
+```
+echo "gem: --no-document" >> ~/.gemrc
+```
+
+Install Rails:
+```
+gem install rails -v 7.0.4
+```
+
+Check Version:
+```
+rails -v
+```
+
+Check Version:
+```
+rails -v
+```
+
+## Install Bundler:
+
+```
+gem install bundler -v 2.3.14
 ```
