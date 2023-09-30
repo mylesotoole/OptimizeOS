@@ -25,6 +25,10 @@ sudo apt-get install rvm -y
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 ```
 
+Reboot to save changes:
+```
+sudo reboot
+```
 
 ## [2. Installing Ruby](https://www.railstutorial.org/book)
 
