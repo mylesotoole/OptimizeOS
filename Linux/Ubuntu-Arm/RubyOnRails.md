@@ -1,4 +1,4 @@
-## Installing RVM:
+## 1. Installing RVM:
 
 [Add Repo](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
 ``` 
@@ -26,7 +26,7 @@ echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 ```
 
 
-## [Installing Ruby](https://www.railstutorial.org/book)
+## 2. [Installing Ruby](https://www.railstutorial.org/book)
 
 Use RVM:
 ``` 
