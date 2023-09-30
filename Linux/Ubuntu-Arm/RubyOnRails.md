@@ -41,7 +41,7 @@ sudo reboot
 rvmsudo rvm cleanup all && rvm fix-permissions
 ```
 
-## [2. Installing Ruby](https://www.railstutorial.org/book)
+## [Installing Ruby](https://www.railstutorial.org/book)
 
 9. Configure RVM, Download, and Set Default Ruby:
 ``` 
