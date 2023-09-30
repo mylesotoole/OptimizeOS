@@ -1,52 +1,49 @@
-## 1. Installing RVM:
+## Installing RVM:
 
-[Add Repo](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
+1. [Add Repo](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
 ``` 
 sudo apt-add-repository -y ppa:rael-gc/rvm
 ```
 
-[Add Key Import Utility](https://rvm.io/):
+2. [Add Key Import Utility](https://rvm.io/):
 ```
 sudo apt install gnupg2
 ```
 
-[Add GPG Keys](https://rvm.io/):
+3. [Add GPG Keys](https://rvm.io/):
 ``` 
 gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 
-Install RVM:
+4. Install RVM:
 ```
 sudo apt-get install rvm -y
 ```
 
-Add your user to `rvm` group (`$USER` will automatically insert your username):
+5. Add your user to `rvm` group (`$USER` will automatically insert your username):
 ```term
 sudo usermod -a -G rvm $USER
 ```    
 
-[Append it to your shell](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
-```
-echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
-```
+6. Now, in order to always load rvm, change the Gnome Terminal to always perform a login.
 
-Reboot to save changes:
+- At terminal window, open the application menu, then `Preferences`. Click on `Unnamed` profile, select the `Command` tab and check `Run command as login shell`.
+
+![Terminal Screenshot](/images/terminal.png)
+
+7. Reboot to save changes:
 ```
 sudo reboot
 ```
 
-Troubleshooting:
+8. Troubleshooting:
 ```
-rvmsudo rvm cleanup all
-```
-
-```
-rvm fix-permissions
+rvmsudo rvm cleanup all && rvm fix-permissions
 ```
 
 ## [2. Installing Ruby](https://www.railstutorial.org/book)
 
-Use RVM:
+9. Configure RVM, Download, and Set Default Ruby:
 ``` 
 rvm get stable
 ```
@@ -59,35 +56,31 @@ rvm install 3.1.2
 rvm --default use 3.1.2
 ```
 
-Check Version:
+10. Check Version:
 ```
 ruby -v
 ```
 
 ## Installing Rails
 
-Configure the __.gemrc__ file to skip the installation of Ruby documentation
+11. Configure the __.gemrc__ file to skip the installation of Ruby documentation
 ```
 echo "gem: --no-document" >> ~/.gemrc
 ```
 
-Install Rails:
+12. Install Rails with a specific version number:
 ```
 gem install rails -v 7.0.4
 ```
 
-Check Version:
-```
-rails -v
-```
-
-Check Version:
+13. Check Version:
 ```
 rails -v
 ```
 
 ## Install Bundler:
 
+14.  Installing Bundler with a specific version number: 
 ```
 gem install bundler -v 2.3.14
 ```
