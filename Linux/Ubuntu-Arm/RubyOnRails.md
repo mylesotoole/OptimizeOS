@@ -17,7 +17,7 @@ gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB
 
 Install RVM:
 ```
-sudo apt-get install rvm
+sudo apt-get install rvm -y
 ```
 
 [Append it to your shell](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
