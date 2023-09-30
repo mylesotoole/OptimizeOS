@@ -20,6 +20,11 @@ Install RVM:
 sudo apt-get install rvm -y
 ```
 
+Add your user to `rvm` group (`$USER` will automatically insert your username):
+```term
+sudo usermod -a -G rvm $USER
+```    
+
 [Append it to your shell](https://github.com/rvm/ubuntu_rvm/blob/531e67a9903a593d2c9c1f3cb9b6ee4ec332fad2/README.md):
 ```
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
@@ -28,6 +33,15 @@ echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 Reboot to save changes:
 ```
 sudo reboot
+```
+
+Troubleshooting:
+```
+rvmsudo rvm cleanup all
+```
+
+```
+rvm fix-permissions
 ```
 
 ## [2. Installing Ruby](https://www.railstutorial.org/book)
