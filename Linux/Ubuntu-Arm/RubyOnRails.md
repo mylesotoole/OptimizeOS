@@ -31,14 +31,9 @@ sudo usermod -a -G rvm $USER
 
 ![Terminal Screenshot](/images/terminal.png)
 
-7. Reboot to save changes:
+7. Fix permissions and reboot:
 ```
-sudo reboot
-```
-
-8. Troubleshooting:
-```
-rvmsudo rvm cleanup all && rvm fix-permissions
+rvmsudo rvm cleanup all && rvm fix-permissions && sudo reboot
 ```
 
 ## [Installing Ruby](https://www.railstutorial.org/book)
