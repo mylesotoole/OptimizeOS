@@ -13,3 +13,9 @@ Get-AppxPackage -AllUsers | Remove-AppxPackage
 ```powershell
 Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 ```
+
+#### Third-party advanced debloating tool:
+
+```powershell
+irm christitus.com/win | iex
+```
