@@ -4,7 +4,7 @@
 
 ```sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop```
 
-## Disable Pop!_Shop
+## Disable Pop!_Shop (Pop!_OS)
 
 ```mkdir -p ~/.config/autostart```
 
