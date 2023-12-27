@@ -1,3 +1,4 @@
+## Installing Ubuntu on Apple Silicon:
 1. Install Ubuntu Server Arm
 
 2. Remove unnecessary Ubuntu Server-specific packages
